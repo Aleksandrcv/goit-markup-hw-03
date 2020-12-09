@@ -5,9 +5,20 @@
   --primary-bg-color: #ffffff;
   --background-color: #e5e5e5;
   --background-color-second: #2f303a;
-  --background-color-third: #f5f4fa;
+  --background-color-third: #f5f4fa
+  --footer-text-color: #rgba(255, 255, 255, 0.6);
 }
 
+/*html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+*/
 .head-links a :visited,
 .head-links :active,
 .head-links :hover,
@@ -55,20 +66,26 @@ a {
   color: var(--primary-text-color);
 }
 
-/*
-.nav-conteiner {
-  display: flex;
-}
 
+/*
+.container {
+  display: flex;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+*/
 .nav-link li {
   margin-right: 40px;
-  outline: 1px solid red;
+  outline: 3px solid red;
 }
 
-.adress-conteiner
+
 
 /* Меню сайта */
-*/ body {
+ body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
@@ -192,7 +209,7 @@ footer {
   font-size: 14px;
   line-height: 1.71em;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-text-color);
 }
 
 .footer-contacts > a {
@@ -202,5 +219,5 @@ footer {
   font-size: 14px;
   line-height: 1.71em;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-text-color);
 }
