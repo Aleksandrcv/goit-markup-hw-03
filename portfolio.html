@@ -3,40 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/goit-markup-hw-02/reset.css">
-  <link rel="stylesheet" href="/goit-markup-hw-02/portfolio.css">
+  <link rel="stylesheet" href="./css/modern-normalize.css">
+  <link rel="stylesheet" href="./css/portfolio.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&family=Roboto:wght@100&display=swap">
     <title>WebStudio</title>
 </head>
 <body>
-    <header>
-        <nav>
-          <a class="logotip"  href="#"><span class="logo-blue">Web</span><span class="logo-black" >Studio</span></a>
-           <ul class="nav-link">
-               <li><a href="#" class="link">Студия</a></li>
-               <li><a href="#" class="link-active">Портфолио</a></li>
-               <li><a href="#" class="link">Контакты</a></li>
-           </ul>
-      </nav>
-      <address>
-        <ul class="adres-head">
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-         </ul>
-     </address>
+     <header class="head-links">
+        <div class="conteiner-main">
+          <nav class="container-nav">
+              <a class="logotip"  href="#"><span class="logo-blue">Web</span><span class="logo-black" >Studio</span></a>
+               <ul class="nav-link">
+                   <li class="list"><a href="#" class="link current">Студия</a></li>
+                   <li class="list"><a href="#" class="link current">Портфолио</a></li>
+                   <li class="list"><a href="#" class="link current">Контакты</a></li>
+               </ul>
+              </nav>   
+              <div class="adress-head" >
+                 <address class="aderess">
+                  <ul class="adress-list">
+                    <li class="list"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="list"><a class="link link-current" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
+                </address>
+           </div>
+        </div>
     </header>
    <main>
-     <section class="all-links" >
-       <!-- <h1>Info-navigate</h1>-->
-          <ul class="links">
-            <li><button type="button" class="b1">Все</button></li>
-            <li><button type="button" class="b1">Веб-сайты</button></li>
-            <li><button type="button" class="b1">Приложения</button></li>
-            <li><button type="button" class="b1">Дизайн</button></li>
-            <li><button type="button" class="b1">Маркетинг</button></li>
-          </ul>
-          <ul>
+     <section class="sections-works" > <!--all-links*>-->
+       <!-- <h1>We can do this</h1>-->
+       <div>
+          <ul class="links-btn">
+            <li class="btn"><button type="button" class="b1">Все</button></li>
+            <li class="btn"><button type="button" class="b1">Веб-сайты</button></li>
+            <li class="btn"><button type="button" class="b1">Приложения</button></li>
+            <li class="btn"><button type="button" class="b1">Дизайн</button></li>
+            <li class="btn"><button type="button" class="b1">Маркетинг</button></li>
+          </ul >
+          <ul class="work-department">
             <li>
               <a href="#"><img src="/goit-markup-hw-02/portfolio/technocruck.jpg" alt="технокряк" width="370" >
               <div class="skill-info">
@@ -110,19 +115,21 @@
             </a>
             </li>
          </ul>
+        </div>
       </section>
     </main>
     <footer>
-      <a class="logotip-footer" href="#"><span class="logo-blue">Web</span><span class="logo-white" >Studio</span></a>
-        <address> 
-           <p class="footer-adress">г. Киев, пр-т Леси Украинки, 26</p>
-            <div class="footer-mail">   
-                <a href="mailto:info@example.com">info@example.com</a>
-           </div >
-             <div class="footer-contacts">
-                <a href="tel:+380991111111">+38 099 111 11 11</a> 
-            </div>
-        </address>   
+      <div class="conteiner-contacts  ">  
+        <address class="footer-contacts"> 
+           <a class="logotip-footer" href="#"><span class="logo-blue">Web</span>
+                 <span class="logo-white" >Studio</span></a>
+          <ul class="footer-list">
+             <li class="list"><p class="footer-adress">г. Киев, пр-т Леси Украинки, 26</p> </li>  
+             <li class="list-footer"><a href="mailto:info@example.com">info@example.com</a></li>  
+             <li class="list-footer"><a href="tel:+380991111111">+38 099 111 11 11</a> </li>  
+          </ul>
+        </address> 
+    </div>  
     </footer>   
 </body>
 </html>
