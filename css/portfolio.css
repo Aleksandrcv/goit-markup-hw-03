@@ -221,7 +221,7 @@ img {
   outline: 1px solid rgb(109, 93, 93);
   margin-left: 5px;
   margin-bottom: 5px;
-  /*width: calc((100%-90px) / 3);*/
+  /*width: calc((100%-270px) / 9);*/
 }
 
 /*.foto-card:nth-child(3n) {
@@ -338,7 +338,5 @@ img {
 
 .footer-link {
   text-decoration: none;
-  color: var(--footer-text-color);
+  color: rgba(255, 255, 255, 0.6);
 }
-
-
