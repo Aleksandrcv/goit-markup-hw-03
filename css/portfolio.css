@@ -6,7 +6,7 @@
   --background-color: #e5e5e5;
   --background-color-second: #2f303a;
   --background-color-third: #f5f4fa;
-  --footer-text-color: #rgba(255, 255, 255, 0.6);
+  --footer-text-color: rgba(255, 255, 255, 0.6);
 }
 
 /*html {
@@ -23,14 +23,14 @@
 
 body {
   background-color: var(--primary-bg-color);
-  color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
 }
 
-a {
+/*a {
   text-decoration: none;
   /*
   color: var(--primary-text-color);*/
+/*
 }
 
 ul {
@@ -38,12 +38,29 @@ ul {
 }
 
 /* Логотип */
+.conteiner-main .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
+  font-style: normal;
+  text-decoration: none;
+
+  color: var(--primary-text-color);
+}
+
+.nav-link {
+  list-style-type: none;
+}
 
 .logotip,
 .logotip-footer {
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 700;
+  list-style-type: none;
+  text-decoration: none;
+
   color: var(--primary-text-color);
 }
 .logo-blue {
@@ -95,16 +112,6 @@ ul {
   margin-right: 40px;
 }
 
-.nav-link .list {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14em;
-  letter-spacing: 0.02em;
-  font-style: normal;
-
-  color: var(--primary-text-color);
-}
-
 /*розширив область дії ховера */
 
 .nav-link .link {
@@ -119,30 +126,29 @@ ul {
   margin-left: auto;
 }
 
-.adress-list {
+.adress-list .link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14em;
   letter-spacing: 0.02em;
   font-style: normal;
 
-  color: var(--primary-text-color);
+  color: var(--tittle-text-color);
 }
+
 .adress-list :active,
 .adress-list :hover,
-.adress-list {
+.nav-link :focus {
   color: var(--accent-color);
 }
 
-.link {
-  color: var(--tittle-text-color);
-}
 .adress-list .list:not(:last-child) {
   margin-right: 50px;
 }
 
 .adress-list {
   display: flex;
+  list-style-type: none;
 }
 .adress-list .link {
   display: block;
@@ -161,7 +167,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
 
-  border: 2px solid blue;
+  border: 1px solid var(--accent-color);
 }
 
 .links-btn {
@@ -170,93 +176,7 @@ ul {
   justify-content: center;
   margin: 0;
   margin-top: 107px;
-}
-
-.btn {
-  margin-right: 8px;
-}
-
-/*виды раблт + фотоописание*/
-.work-department {
-  display: flex;
-  flex-wrap: wrap;
-  /*width: calc(100%-90px) / 3;*/
-}
-
-.nav-links,
-.link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14em;
-  letter-spacing: 0.02em;
-
-  text-decoration: none;
-  color: var(--primary-text-color);
-  /* color: var(--accent-color); */
-}
-
-.nav-link .link {
-  text-transform: capitalize;
-}
-
-.link-active {
-  color: var(--accent-color);
-}
-
-/* .main-nav a:visited, */
-.nav-link .link:active,
-.nav-link .link:hover,
-.nav-link .link:focus {
-  color: var(--accent-color);
-}
-.adres-head a {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14em;
-  letter-spacing: 0.02em;
-  color: var(--tittle-text-color);
-}
-
-/*adres-head a:visited, */
-.adres-head a:active,
-.adres-head a:hover,
-.adres-head a:focus {
-  color: var(--accent-color);
-}
-
-.hero {
-  background-color: var(--background-color-second);
-  color: var(--primary-bg-color);
-  text-align: center;
-}
-
-.hero h1 {
-  text-transform: uppercase;
-  font-size: 44px;
-  line-height: 1.36em;
-  letter-spacing: 0.06em;
-}
-.hero a:active,
-.hero a:hover,
-.hero a:focus {
-  color: var(--primary-text-color);
-}
-.hero a {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87em;
-  letter-spacing: 0.06em;
-  color: var(--primary-bg-color);
-}
-
-.button {
-  background-color: var(--accent-color);
-  display: inline-block;
-  border-radius: 4px;
-  padding: 10px 32px;
-  min-width: 200px;
-  text-align: center;
-  border: 1px solid transparent; /*проверить функцию прозрачности*/
+  list-style-type: none;
 }
 
 .b1 {
@@ -275,38 +195,97 @@ ul {
   color: var(--primary-bg-color);
 }
 
-.all-links {
-  background: var(--background-color);
+.btn {
+  margin-right: 8px;
 }
 
-.skill-info {
-  background: var(--primary-bg-color);
-  /* border: 1px solid #eeeeee; */
+/*карточки  меню виды работ */
+.work-department {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+/*убирает отступи с картинок-->*/
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.foto-card {
   box-sizing: border-box;
+  width: 370px;
+  height: 408px;
+  outline: 1px solid rgb(109, 93, 93);
+  margin-left: 5px;
+  margin-bottom: 5px;
+  /*width: calc((100%-90px) / 3);*/
 }
 
-.skill-info h3 {
+/*.foto-card:nth-child(3n) {
+  margin-right: 30px;
+}
+
+.foto-card:nth-child(-n + 3) {
+  margin-bottom: 30px;
+}
+*/
+.card-content {
+  padding: 20px 24px;
+  outline: 1px solid green;
+  box-sizing: border-box;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin: 0;
+}
+
+.foto-card :hover,
+.foto-card :focus {
+  color: var(--accent-color);
+}
+
+.link-card {
+  text-decoration: none;
+  display: block;
+  margin: 0;
+}
+
+.titel-card {
   font-weight: 700;
   font-size: 18px;
   line-height: 2em;
   letter-spacing: 0.06em;
+
   color: var(--primary-text-color);
+  margin: 0;
 }
 
-.skill-info p {
-  color: var(--tittle-text-color);
+.description-card {
   font-weight: 400;
   font-size: 16px;
   line-height: 1, 88em;
   letter-spacing: 0.03em;
+
+  color: var(--tittle-text-color);
+  margin-bottom: 0;
+}
+
+/*способы решения убрать отступи*/
+/*
+.foto-card:nth-child(3n) {
+  margin-right: 30;
+}
+.foto-card:nth-last-child(-n + 3) {
+  margin-bottom: 30;
 }
 
 /* Подвал */
 
-/* Подвал */
-
 .conteiner-contacts {
-  height: 250px;
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -318,7 +297,7 @@ ul {
 
 /*логотип-фуутер*/
 .logotip-footer {
-  border: 2px solid red;
+  outline: 1px solid red;
 }
 
 .logotip-footer :hover,
@@ -338,17 +317,6 @@ ul {
   margin-top: 100px;
 }
 
-.footer-adress {
-  margin: 0;
-  font-style: normal;
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71em;
-  letter-spacing: 0.03em;
-  color: var(--primary-bg-color);
-}
-
 .list-footer :hover,
 .list-footer :focus {
   color: var(--accent-color);
@@ -357,13 +325,20 @@ ul {
 .footer-list {
   margin: 0;
   font-style: normal;
-  text-decoration: none;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71em;
   letter-spacing: 0.03em;
-  color: var(-footer-text-color);
-  flex-direction: column;
-  /*justify-content: left;*/
-  border: 2px solid red;
+  list-style-type: none;
 }
+
+.footer-adress {
+  color: var(--primary-bg-color);
+}
+
+.footer-link {
+  text-decoration: none;
+  color: var(--footer-text-color);
+}
+
+
