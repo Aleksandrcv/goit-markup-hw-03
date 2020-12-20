@@ -452,7 +452,7 @@ img {
   outline: 1px solid rgb(109, 93, 93);
 }
 
-.foto-card:nth-child(2n + 1) {
+.foto-card:nth-child(3n + 1) {
   margin-right: 30px;
 }
 
