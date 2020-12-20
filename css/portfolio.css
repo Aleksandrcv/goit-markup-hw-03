@@ -524,6 +524,9 @@ img {
   background-color: var(--background-color-second);
 }
 
+.conteiner-contacts .logotip-footer:first-child {
+  margin-right: 70px;
+}
 /*логотип-фуутер*/
 .logotip-footer {
   font-family: Raleway, sans-serif;
